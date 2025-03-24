@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/tempof.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-x: hidden;
+
+}
+h1{
+    text-align: center;
+    margin-top:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boxnumber{
+    margin-left:150px;
+    margin-top: 60px;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    background-color: rgb(173, 170, 170);
+    justify-content: space-around;
+    display: flex;
+}
+.box{
+    width: 20%;
+    height: 150px;
+    background-color: dimgrey;
+}
+.btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap:30px;
+    
+}
+#start{
+    padding: 20px;
+    border-radius: 20%;
+    background-color:greenyellow;
+    color:black;
+    font-weight: bold;
+}
+#stop{
+    padding: 20px;
+    border-radius: 20%;
+    background-color:rgb(255, 68, 47);
+    color:black;
+    font-weight: bold;
+}
+#clear{
+    padding: 20px;
+    border-radius: 20%;
+    background-color:rgb(255, 254, 254);
+    color:black;
+    font-weight: bold;
+}
+.btn-btn:hover{
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+@media(max-width:600px){
+    body,html {
+        width: 100%;
+        min-width: 300px;
+        overflow-x: hidden;
+    }
+ h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+.boxnumber{
+    display: flex;
+    flex-wrap:nowrap;
+    margin-left: 50px;
+    gap: 10px;
+}
+.box{
+    height: 100px;
+
+}
+.btn{
+    display: flex;
+    flex-direction: column; /* Empilha botões no celular */
+    gap: 10px;
+    margin-left:150px;
+    width: 150px;
+    
+}
+.btn-btn {
+    width: 60%; /* Faz os botões ocuparem mais espaço */
+    font-size: 1em;
+    padding: 20px;
+ }
+}
